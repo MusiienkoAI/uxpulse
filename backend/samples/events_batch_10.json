@@ -1,0 +1,174 @@
+{
+  "events": [
+    {
+      "event_id": "evt_0001",
+      "name": "screen_view",
+      "ts": "2026-02-17T18:00:00Z",
+      "user_id": "anon_01",
+      "session_id": "sess_1001",
+      "platform": "android",
+      "app_version": "1.4.2",
+      "os_version": "14",
+      "device_model": "Pixel 7",
+      "screen": "Browse",
+      "source": "src/screens/BrowseScreen.tsx",
+      "props": {
+        "entry": "home_tab"
+      }
+    },
+    {
+      "event_id": "evt_0002",
+      "name": "screen_view",
+      "ts": "2026-02-17T18:00:12Z",
+      "user_id": "anon_01",
+      "session_id": "sess_1001",
+      "platform": "android",
+      "app_version": "1.4.2",
+      "os_version": "14",
+      "device_model": "Pixel 7",
+      "screen": "Item",
+      "source": "src/screens/ItemScreen.tsx",
+      "props": {
+        "item_id": "item_245"
+      }
+    },
+    {
+      "event_id": "evt_0003",
+      "name": "add_to_cart",
+      "ts": "2026-02-17T18:00:20Z",
+      "user_id": "anon_01",
+      "session_id": "sess_1001",
+      "platform": "android",
+      "app_version": "1.4.2",
+      "os_version": "14",
+      "device_model": "Pixel 7",
+      "screen": "Item",
+      "source": "src/screens/ItemScreen.tsx",
+      "props": {
+        "item_id": "item_245",
+        "price": 12.5
+      }
+    },
+    {
+      "event_id": "evt_0004",
+      "name": "screen_view",
+      "ts": "2026-02-17T18:00:35Z",
+      "user_id": "anon_01",
+      "session_id": "sess_1001",
+      "platform": "android",
+      "app_version": "1.4.2",
+      "os_version": "14",
+      "device_model": "Pixel 7",
+      "screen": "Checkout",
+      "source": "src/screens/CheckoutScreen.tsx",
+      "props": {
+        "cart_items": 1
+      }
+    },
+    {
+      "event_id": "evt_0005",
+      "name": "api_error",
+      "ts": "2026-02-17T18:00:40Z",
+      "user_id": "anon_01",
+      "session_id": "sess_1001",
+      "platform": "android",
+      "app_version": "1.4.2",
+      "os_version": "14",
+      "device_model": "Pixel 7",
+      "screen": "Checkout",
+      "source": "src/api/menuClient.ts",
+      "props": {
+        "endpoint": "/menu",
+        "status": 504,
+        "api_ms": 2400,
+        "error_type": "timeout"
+      }
+    },
+    {
+      "event_id": "evt_0006",
+      "name": "screen_view",
+      "ts": "2026-02-17T18:02:00Z",
+      "user_id": "anon_02",
+      "session_id": "sess_1002",
+      "platform": "ios",
+      "app_version": "1.4.2",
+      "os_version": "17.4",
+      "device_model": "iPhone 14",
+      "screen": "Checkout",
+      "source": "src/screens/CheckoutScreen.tsx",
+      "props": {
+        "cart_items": 3
+      }
+    },
+    {
+      "event_id": "evt_0007",
+      "name": "api_ok",
+      "ts": "2026-02-17T18:02:05Z",
+      "user_id": "anon_02",
+      "session_id": "sess_1002",
+      "platform": "ios",
+      "app_version": "1.4.2",
+      "os_version": "17.4",
+      "device_model": "iPhone 14",
+      "screen": "Checkout",
+      "source": "src/api/menuClient.ts",
+      "props": {
+        "endpoint": "/menu",
+        "status": 200,
+        "api_ms": 420
+      }
+    },
+    {
+      "event_id": "evt_0008",
+      "name": "checkout_complete",
+      "ts": "2026-02-17T18:02:40Z",
+      "user_id": "anon_02",
+      "session_id": "sess_1002",
+      "platform": "ios",
+      "app_version": "1.4.2",
+      "os_version": "17.4",
+      "device_model": "iPhone 14",
+      "screen": "Checkout",
+      "source": "src/screens/CheckoutScreen.tsx",
+      "props": {
+        "order_id": "ord_9001",
+        "value": 44.2
+      }
+    },
+    {
+      "event_id": "evt_0009",
+      "name": "api_error",
+      "ts": "2026-02-17T18:03:10Z",
+      "user_id": "anon_03",
+      "session_id": "sess_1003",
+      "platform": "android",
+      "app_version": "1.4.2",
+      "os_version": "14",
+      "device_model": "Galaxy S23",
+      "screen": "Menu",
+      "source": "src/api/menuClient.ts",
+      "props": {
+        "endpoint": "/menu",
+        "status": 500,
+        "api_ms": 1800,
+        "error_type": "server_error"
+      }
+    },
+    {
+      "event_id": "evt_0010",
+      "name": "screen_view",
+      "ts": "2026-02-17T18:03:20Z",
+      "user_id": "anon_03",
+      "session_id": "sess_1003",
+      "platform": "android",
+      "app_version": "1.4.2",
+      "os_version": "14",
+      "device_model": "Galaxy S23",
+      "screen": "Menu",
+      "source": "src/screens/MenuScreen.tsx",
+      "props": {
+        "category": "lunch"
+      }
+    }
+  ]
+}

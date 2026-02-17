@@ -1,0 +1,70 @@
+{
+  "name": "uxpulse",
+  "displayName": "UXPulse (Local)",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onView:uxpulse.issues",
+    "onCommand:uxpulse.refresh"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "uxpulse",
+          "title": "UXPulse",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "uxpulse": [
+        {
+          "id": "uxpulse.issues",
+          "name": "Issues"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "uxpulse.refresh",
+        "title": "UXPulse: Refresh"
+      },
+      {
+        "command": "uxpulse.openIssue",
+        "title": "UXPulse: Open Issue Details"
+      },
+      {
+        "command": "uxpulse.openSource",
+        "title": "UXPulse: Open Source Link"
+      }
+    ],
+    "configuration": {
+      "title": "UXPulse",
+      "properties": {
+        "uxpulse.baseUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "UXPulse backend URL"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.5.0"
+  }
+}
